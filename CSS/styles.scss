@@ -42,6 +42,9 @@ html {
     font-style: normal;
     font-weight: 400;
 }
+body {
+    background: $backgrund-color;
+}
 
 // header-------------------------------------------------------------------------------
 .nav{
@@ -55,13 +58,20 @@ font-weight: 600;
 font-size: 24px;
 line-height: 52px;
 
+    a{
+        color: black; 
+    }
+
+    a:hover{
+        color: $font-hover;
+    }
+
+    img {
+    width: 5rem;
+    height: 3.2rem;
+    }
 }
-.ul__li a{
-   color: black; 
-}
-.ul__li a:hover{
-    color: $font-hover;
-}
+
 
 .profile-bottom{
     display: flex;
@@ -73,19 +83,19 @@ line-height: 52px;
    width: 3.2rem;
     height: 3.2rem;  
 }
-.ul__li img {
-    width: 5rem;
-    height: 3.2rem;
-}
+
 .img {
     display: flex;
     align-items: center;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
+
 }
 
-.img a {
-    display: flex;
-    align-items: center;
-}
+ 
 
 .header {
     background: #FFFFFF;
@@ -140,14 +150,17 @@ a {
     "line-one help line-two contact line-three" 8rem
     ". Copyright Copyright Copyright ." 4rem /
     1fr 11.4rem 5rem  11.4rem 1fr 
-;
-align-items: center;
-align-content: center;
+    ;
+    align-items: center;
+    align-content: center;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+
 }
-.footer img {
-    width: 5rem;
-    height: 5rem;
-}
+.footer 
 /* Iconos */
 
 .footer__Insta{
@@ -177,13 +190,16 @@ font-size: 2.4rem;
 line-height: 5.2rem;
 color: black;
 justify-self: end;
+
+    p{
+        margin-right: 2rem;
+    }
+    p:hover{
+        color: $font-hover;
+    }
+
 }
-.footer__words--contact p{
-    margin-right: 2rem;
-}
-.footer__words--contact p:hover{
-    color: $font-hover;
-}
+
 
 .footer__words--help{
 
