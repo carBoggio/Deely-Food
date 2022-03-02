@@ -1,0 +1,419 @@
+.filtros-section2__div {
+  width: 100vw;
+  display: grid;
+  grid-template: "line-1 title-h1 line-2" 12.7rem/1fr 52rem 1fr;
+  place-content: center;
+}
+
+.filtros-section2__div--line1 {
+  grid-area: line-1;
+  place-self: center;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.filtros-section2__div--h1 {
+  grid-area: title-h1;
+  place-self: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.filtros-section2__div--line2 {
+  grid-area: line-2;
+  place-self: center;
+  width: 100%;
+  height: 1px;
+  background: black;
+}
+
+.filtros-section__div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8.8rem 6.6rem;
+}
+
+.body-filtros {
+  background: white;
+}
+
+.filtros-section1 {
+  display: grid;
+  grid-template: " . title title" 12rem " . . ." 5.7rem " . mockup text" 50rem/5.4rem 30.4rem 1fr;
+}
+
+.filtros-section1__h1 {
+  grid-area: title;
+  align-self: end;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.filtros-section1__text--h2 {
+  margin-bottom: 6rem;
+  margin-top: 4.2rem;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 52px;
+}
+
+.filtros-section1__text--p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 52px;
+  width: 73rem;
+  height: 25.8rem;
+}
+
+.filtros-section1__img1 {
+  grid-area: mockup;
+  width: 25.4rem;
+  height: 50rem;
+}
+
+.filtros-section1__text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+}
+
+.filtros-section1__text--img2 {
+  width: 670px;
+  height: 19px;
+  object-fit: contain;
+}
+
+.filtros-section3 {
+  height: 13.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filtros-section3 button {
+  width: 12.1rem;
+  height: 5.3rem;
+  background: var(--principal-color);
+  border-radius: 3.31px;
+  border: none;
+  color: white;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23.19px;
+  line-height: 36px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+[hidden] {
+  display: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+template {
+  display: none;
+}
+
+summary {
+  display: list-item;
+}
+
+details {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.button:hover {
+  background: #d65043;
+  cursor: pointer;
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transform: translateY(-3px);
+}
+
+.button:active {
+  background: principal-color-active;
+  transform: translateY(3px);
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ul__li {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 52px;
+}
+
+.ul__li a {
+  color: black;
+}
+
+.ul__li a:hover {
+  color: #a0a0a0;
+}
+
+.profile-bottom {
+  display: flex;
+  align-items: center;
+  gap: 0 4.5rem;
+}
+
+.profile-bottom__perfil img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.ul__li img {
+  width: 5rem;
+  height: 3.2rem;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+}
+
+.img a {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(78, 89, 105, 0.06);
+  padding: 0 1.7rem;
+}
+
+.nav-ul__li--perfil {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.ul {
+  display: flex;
+  align-items: center;
+  gap: 4.5rem;
+}
+
+.profile-bottom__button button {
+  display: flex;
+  align-items: center;
+  gap: 0 1rem;
+  padding: 8px 16px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  height: 3.2rem;
+  color: white;
+  background: #f2594b;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+/* enlace */
+a {
+  text-decoration: none;
+}
+
+.footer {
+  display: grid;
+  height: 23.5rem;
+  width: 100vw;
+  background: #f7f8fa;
+  grid-template: " . icon-insta icon-face icon-whap . " 5rem "line-one help line-two contact line-three" 8rem ". Copyright Copyright Copyright ." 4rem/1fr 11.4rem 5rem 11.4rem 1fr;
+  align-items: center;
+  align-content: center;
+}
+
+.footer img {
+  width: 5rem;
+  height: 5rem;
+}
+
+/* Iconos */
+.footer__Insta {
+  grid-area: icon-insta;
+}
+
+.footer__Face {
+  grid-area: icon-face;
+}
+
+.footer__What {
+  grid-area: icon-whap;
+  justify-self: end;
+}
+
+/* Linea Horizontal */
+.footer__line1 {
+  grid-area: line-one;
+  height: 0.1rem;
+  background: black;
+  width: 100%;
+}
+
+.footer__words--contact {
+  grid-area: contact;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 5.2rem;
+  color: black;
+  justify-self: end;
+}
+
+.footer__words--contact p {
+  margin-right: 2rem;
+}
+
+.footer__words--contact p:hover {
+  color: #a0a0a0;
+}
+
+.footer__words--help {
+  grid-area: help;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 5.2rem;
+  color: black;
+}
+.footer__words--help p:hover {
+  color: #a0a0a0;
+}
+.footer__words--help p {
+  margin-left: 2rem;
+}
+
+.footer__line2 {
+  grid-area: line-two;
+  height: 3.2rem;
+  width: 1px;
+  background: black;
+  justify-self: center;
+}
+
+.footer__line3 {
+  grid-area: line-three;
+  height: 0.1rem;
+  background: black;
+  width: 100%;
+}
+
+.footer__Copyright {
+  grid-area: Copyright;
+  justify-self: center;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 2.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
