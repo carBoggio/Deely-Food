@@ -8,3 +8,76 @@ $input-backgrund-color:#F2F3F5;
 $input-font-color:#86909C;
 $principal-color-hover: rgb(214, 80, 67);
 $principal-color-active: rgb(194, 72, 61);
+
+
+.main-ayuda{
+    width: 90%;
+    margin: 3rem auto;
+    max-width: 70rem;  
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(78, 89, 105, 0.06);
+    width: 90%;
+    max-width: 75rem;
+    margin: 3rem auto;
+    padding: 3rem;
+}
+.main-ayuda__titulo {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 2rem;
+}
+summary::marker {
+    display: none;
+    content:"";
+}
+summary{
+    
+}
+.ul-ayuda{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22.75px;
+    line-height: 36px;
+
+    color: #3f4652;
+}
+details{
+    margin: 2.4rem;
+    padding-bottom: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    p{
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 30px;
+        color: #727b86;
+        cursor: auto;
+    }
+    position: relative;
+    border-bottom: 1.5px solid #a0a6af;
+}
+.main-ayuda__button{
+    width: 12.1rem;
+    height: 5.3rem;
+    background: $principal-color;
+    border-radius: 3.31px;
+    border: none;
+    color:white;
+
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.19px;
+    line-height: 36px;
+}
+.button-container{
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

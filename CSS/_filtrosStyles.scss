@@ -12,7 +12,6 @@ $principal-color-active: rgb(194, 72, 61);
 
 
 
-
 .filtros-section2__div {
     width: 100vw;
     display: grid;
@@ -62,9 +61,7 @@ $principal-color-active: rgb(194, 72, 61);
 
 
 
-.body-filtros{
-    background: white;
-}
+
 .filtros-section1{
     display: grid;
     grid-template: 
@@ -135,7 +132,7 @@ $principal-color-active: rgb(194, 72, 61);
 .filtros-section3 button{
     width: 12.1rem;
     height: 5.3rem;
-    background: var(--principal-color);
+    background: $principal-color;
     border-radius: 3.31px;
     border: none;
     color:white;
