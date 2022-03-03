@@ -1,0 +1,131 @@
+$font-hover:rgb(160, 160, 160);
+$imput-radius: 3.11439px;
+$principal-color: rgba(242, 89, 75, 1);
+$box-shadow:rgba(78, 89, 105, 0.06);
+$backgrund-color:#F7F8FA;
+$label-form-color: #4E5969;
+$input-backgrund-color:#F2F3F5;
+$input-font-color:#86909C;
+$principal-color-hover: rgb(214, 80, 67);
+$principal-color-active: rgb(194, 72, 61);
+
+
+
+.form div {
+    display: flex;
+    margin-bottom: 2.5rem;
+    align-items: center;
+    
+}
+.form label, .form p {
+    width: 12.6rem;
+}
+.div-form__h1 {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 3rem;
+}
+.form input, .form__mensaje textarea, .form__select select {
+    outline: none;
+    background: $input-backgrund-color;
+    border: none;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21.8007px;
+    line-height: 34px;
+    color: $input-font-color;
+    height: 100%;
+    padding: 1.5rem;
+
+}
+.div-form {
+    width: 90%;
+    max-width: 75rem;
+    margin: 3rem auto;
+    padding: 3rem;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(78, 89, 105, 0.06);
+}
+.form__mensaje label{
+    align-self: flex-start;
+}
+.form label, .form p {
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.18007rem;
+    line-height: 3.4rem;
+    color: $label-form-color;
+}
+.form__check label {
+    flex-grow: 1;
+    margin-left: 6rem;
+    cursor: pointer;
+}
+[type="checkbox"]{
+display: none;
+
+}
+[type="checkbox"]:checked + label::before {
+    content: " ? ";
+    
+}
+.form__check label::before {
+    content: "";
+    border: solid 3px $principal-color;
+    border-radius: 3px;
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    left: 2.3rem;
+    top: 0.5rem;
+}
+
+.form__check {
+    gap: 0 1.5rem;
+     position: relative;
+}
+
+/* Inputs individuales */
+
+/* nombre, apellido, mail, select y text-area */
+.form__name input, .form__apellido input, textarea, .form__email input, .form__select select {
+    width: 70%;
+    border-radius: $imput-radius;
+    
+
+}
+.form__select select {
+    appearance: none;
+}
+.form__select {
+   position: relative;
+}
+.form__select span {
+   position: absolute;
+   left: 55rem;
+}
+
+.form button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
+    padding: 1rem 2.65rem;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    width: 119px;
+    height: 53px;
+    color: white;
+    background: $principal-color;
+    border: none;
+    border-radius: 0.2rem;
+    margin: auto;
+}

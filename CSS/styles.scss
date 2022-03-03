@@ -1,0 +1,252 @@
+$font-hover:rgb(160, 160, 160);
+$imput-radius: 3.11439px;
+$principal-color: rgba(242, 89, 75, 1);
+$box-shadow:rgba(78, 89, 105, 0.06);
+$backgrund-color:#F7F8FA;
+$label-form-color: #4E5969;
+$input-backgrund-color:#F2F3F5;
+$input-font-color:#86909C;
+$principal-color-hover: rgb(214, 80, 67);
+$principal-color-active: rgb(194, 72, 61);
+
+//modulos
+
+@use "ayudaStyles";
+
+@use "contactoStyles";
+
+@use "filtrosStyles";
+
+@use "indexStyles";
+
+@use "normalice.scss";
+
+@use "SobNosotrosStyles";
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+.button:hover{
+    background: $principal-color-hover;
+    cursor: pointer;
+    transition: all cubic-bezier(0.215, 0.610, 0.355, 1) 0.5s;
+    transform: translateY(-3px);
+}
+.button:active{
+    background: principal-color-active;
+    transform: translateY(3px);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+body {
+    background: $backgrund-color;
+}
+
+// header-------------------------------------------------------------------------------
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.ul__li{
+font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 52px;
+
+    a{
+        color: black; 
+    }
+
+    a:hover{
+        color: $font-hover;
+    }
+
+    img {
+    width: 5rem;
+    height: 3.2rem;
+    }
+}
+
+
+.profile-bottom{
+    display: flex;
+    align-items: center;
+    gap: 0 4.5rem;
+}
+
+.profile-bottom__perfil img {
+   width: 3.2rem;
+    height: 3.2rem;  
+}
+
+.img {
+    display: flex;
+    align-items: center;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+ 
+
+.header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px $box-shadow;
+    padding: 0 1.7rem;
+
+}
+.nav-ul__li--perfil {
+    width: 3.2rem;
+    height: 3.2rem;
+    
+}
+.ul {
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+}
+.profile-bottom__button button{
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    padding: 8px 16px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    height: 3.2rem;
+    color: white;
+    background: $principal-color;
+    border: none;
+    border-radius: 0.2rem;
+}
+
+
+/* enlace */
+a {
+    text-decoration: none;
+}
+
+
+
+// Footer-------------------------------------------------------------------------------
+.footer {
+    display: grid;
+    height: 23.5rem;
+    width: 100vw;
+    background: rgba(247, 248, 250, 1);
+    ;
+    grid-template:
+    " . icon-insta icon-face icon-whap . " 5rem
+    "line-one help line-two contact line-three" 8rem
+    ". Copyright Copyright Copyright ." 4rem /
+    1fr 11.4rem 5rem  11.4rem 1fr 
+    ;
+    align-items: center;
+    align-content: center;
+
+    img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+}
+.footer 
+/* Iconos */
+
+.footer__Insta{
+grid-area: icon-insta;
+}
+.footer__Face{
+grid-area: icon-face;
+}
+.footer__What{
+grid-area: icon-whap;
+justify-self: end;
+}
+
+/* Linea Horizontal */
+.footer__line1{
+grid-area: line-one;
+height: 0.1rem;
+background: black;
+width: 100%;
+}
+.footer__words--contact{
+grid-area: contact;
+font-family: Nunito;
+font-style: normal;
+font-weight: 600;
+font-size: 2.4rem;
+line-height: 5.2rem;
+color: black;
+justify-self: end;
+
+    p{
+        margin-right: 2rem;
+    }
+    p:hover{
+        color: $font-hover;
+    }
+
+}
+
+
+.footer__words--help{
+
+    p:hover{
+        color: $font-hover;
+    }
+    p{
+        margin-left: 2rem;
+        
+    }
+    grid-area: help;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 5.2rem;
+    color: black;
+}
+
+
+
+
+.footer__line2{
+    grid-area: line-two;
+    height: 3.2rem;
+    width: 1px;
+    background: black;
+    justify-self: center;
+}
+
+
+
+
+.footer__line3{
+    grid-area: line-three;
+    height: 0.1rem;
+    background: black;
+    width: 100%;
+
+}
+.footer__Copyright {
+    grid-area: Copyright;
+    justify-self: center;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 2.5rem;
+}
