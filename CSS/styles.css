@@ -802,6 +802,7 @@ body {
   background: #FFFFFF;
   box-shadow: 0px 4px 10px rgba(78, 89, 105, 0.06);
   padding: 0 1.7rem;
+  height: 5.2rem;
 }
 
 .nav-ul__li--perfil {
