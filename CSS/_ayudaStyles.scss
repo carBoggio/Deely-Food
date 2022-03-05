@@ -9,6 +9,19 @@ $input-font-color:#86909C;
 $principal-color-hover: rgb(214, 80, 67);
 $principal-color-active: rgb(194, 72, 61);
 
+@mixin ButtonGral($whid: 12.1rem, $height: 5.3rem){
+    background: $principal-color;
+    color: white;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 3.31px;
+    border: none;
+    width: $whid;
+    height: $height;
+
+}
+
 
 .main-ayuda{
     width: 90%;
@@ -33,9 +46,7 @@ summary::marker {
     display: none;
     content:"";
 }
-summary{
-    
-}
+
 .ul-ayuda{
     font-family: Nunito;
     font-style: normal;
@@ -60,17 +71,12 @@ details{
     position: relative;
     border-bottom: 1.5px solid #a0a6af;
 }
-.main-ayuda__button{
-    width: 12.1rem;
-    height: 5.3rem;
-    background: $principal-color;
-    border-radius: 3.31px;
-    border: none;
-    color:white;
 
-    font-family: Nunito;
-    font-style: normal;
-    font-weight: 600;
+
+
+.main-ayuda__button{
+
+    @include ButtonGral($whid:12.1rem, $height:5.3rem);
     font-size: 23.19px;
     line-height: 36px;
 }

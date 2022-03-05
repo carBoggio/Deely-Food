@@ -23,10 +23,28 @@ $principal-color-active: rgb(194, 72, 61);
 
 @use "SobNosotrosStyles";
 
+
 html {
     font-size: 62.5%;
     
 }
+
+
+@mixin ButtonGral($whid: 12.1rem, $height: 5.3rem){
+    background: $principal-color;
+    color: white;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 3.31px;
+    border: none;
+    width: $whid;
+    height: $height;
+
+}
+
+
+
 .button:hover{
     background: $principal-color-hover;
     cursor: pointer;
@@ -37,6 +55,10 @@ html {
     background: principal-color-active;
     transform: translateY(3px);
 }
+
+
+
+
 
 *{
     font-family: 'Nunito', sans-serif;
